@@ -1,9 +1,41 @@
-# Integrate Articles API with front-end application
+# Simple Articles API
 
-Create a simple front-end application with your framework / library of choice (e.g. React, Angular, Vue, etc) and integrate the given Articles API.
+## Prerequisites
+node >= 14.16.7
 
-<object data="PA1.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="PA1.pdf">
-        <p>Please download the PDF to view the practical assigment: <a href="PA1.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+## How to start the app
+
+```
+cd articles-api
+npm install
+node index.js
+```
+
+The Articles API will be accessible on [localhost:3000/articles](http://localhost:3000/articles).
+
+## Available endpoints
+
+### Get all articles
+*GET /articles*
+
+### Get article by ID
+*GET /articles/:articleId*
+
+### Add new article
+*POST /articles*
+
+Request body:
+```
+{ "price": 10, "title": "Article title", "imageUrl": "https://example.com" }
+```
+
+### Update article by ID
+*PUT /articles/:articleId*
+
+Request body:
+```
+{ "price": 10, "title": "Article title", "imageUrl": "https://example.com" }
+```
+
+### Delete article by ID
+*DELETE /articles/:articleId*

@@ -1,13 +1,10 @@
-# fly.toml app configuration file generated for little-pine-9967 on 2023-05-09T23:02:37+03:00
+# fly.toml app configuration file generated for falling-darkness-3491 on 2023-05-09T23:11:48+03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "little-pine-9967"
+app = "falling-darkness-3491"
 primary_region = "otp"
-
-[env]
-  PORT = "8080"
 
 [http_service]
   internal_port = 8080
